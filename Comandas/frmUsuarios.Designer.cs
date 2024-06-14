@@ -1,6 +1,6 @@
 ﻿namespace Comandas
 {
-    partial class FrmComanda
+    partial class frmUsuarios
     {
         /// <summary>
         /// Required designer variable.
@@ -57,7 +57,7 @@
             btnVoltar.Lighting = false;
             btnVoltar.LinearGradient_Background = false;
             btnVoltar.LinearGradientPen = false;
-            btnVoltar.Location = new Point(12, 534);
+            btnVoltar.Location = new Point(12, 568);
             btnVoltar.Name = "btnVoltar";
             btnVoltar.PenWidth = 15;
             btnVoltar.Rounding = true;
@@ -70,23 +70,24 @@
             btnVoltar.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             btnVoltar.Timer_Effect_1 = 5;
             btnVoltar.Timer_RGB = 300;
-            btnVoltar.Click += cyberButton1_Click;
+            btnVoltar.Click += btnVoltar_Click;
             // 
-            // FrmComanda
+            // frmUsuarios
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(924, 630);
+            ClientSize = new Size(933, 655);
             Controls.Add(btnVoltar);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "FrmComanda";
+            Name = "frmUsuarios";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Comanda";
+            Text = "Usuarios";
             ResumeLayout(false);
         }
 
         #endregion
 
+        private ReaLTaiizor.Controls.CyberButton cyberButton1;
         private ReaLTaiizor.Controls.CyberButton btnVoltar;
     }
 }

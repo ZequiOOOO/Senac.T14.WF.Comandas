@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace Comandas
 {
-    public partial class FrmComandaCad : Form
+    public partial class frmPedidoCozinha : Form
     {
-        public FrmComandaCad()
+        public frmPedidoCozinha()
         {
             InitializeComponent();
+        }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void frmPedidoCozinha_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

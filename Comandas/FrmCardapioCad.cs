@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Comandas
 {
-    public partial class FrmComandaCad : Form
+    public partial class FrmCardapioCad : Form
     {
-        public FrmComandaCad()
+        public FrmCardapioCad()
         {
             InitializeComponent();
         }

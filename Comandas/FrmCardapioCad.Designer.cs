@@ -1,6 +1,6 @@
 ﻿namespace Comandas
 {
-    partial class FrmComandaCad
+    partial class FrmCardapioCad
     {
         /// <summary>
         /// Required designer variable.
@@ -57,7 +57,7 @@
             cyberButton1.Lighting = false;
             cyberButton1.LinearGradient_Background = false;
             cyberButton1.LinearGradientPen = false;
-            cyberButton1.Location = new Point(12, 552);
+            cyberButton1.Location = new Point(12, 512);
             cyberButton1.Name = "cyberButton1";
             cyberButton1.PenWidth = 15;
             cyberButton1.Rounding = true;
@@ -71,18 +71,16 @@
             cyberButton1.Timer_Effect_1 = 5;
             cyberButton1.Timer_RGB = 300;
             // 
-            // FrmComandaCad
+            // FrmCardapioCad
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(924, 639);
+            ClientSize = new Size(919, 609);
             Controls.Add(cyberButton1);
             FormBorderStyle = FormBorderStyle.None;
-            MinimumSize = new Size(261, 61);
-            Name = "FrmComandaCad";
+            Name = "FrmCardapioCad";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "ComandaCad";
-            TransparencyKey = Color.Fuchsia;
+            Text = "CardapioCad";
             ResumeLayout(false);
         }
 

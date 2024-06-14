@@ -1,6 +1,6 @@
 ﻿namespace Comandas
 {
-    partial class FrmComanda
+    partial class frmPedidoCozinha
     {
         /// <summary>
         /// Required designer variable.
@@ -57,7 +57,7 @@
             btnVoltar.Lighting = false;
             btnVoltar.LinearGradient_Background = false;
             btnVoltar.LinearGradientPen = false;
-            btnVoltar.Location = new Point(12, 534);
+            btnVoltar.Location = new Point(12, 573);
             btnVoltar.Name = "btnVoltar";
             btnVoltar.PenWidth = 15;
             btnVoltar.Rounding = true;
@@ -70,23 +70,25 @@
             btnVoltar.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             btnVoltar.Timer_Effect_1 = 5;
             btnVoltar.Timer_RGB = 300;
-            btnVoltar.Click += cyberButton1_Click;
+            btnVoltar.Click += btnVoltar_Click;
             // 
-            // FrmComanda
+            // frmPedidoCozinha
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(924, 630);
+            ClientSize = new Size(921, 660);
             Controls.Add(btnVoltar);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "FrmComanda";
+            Name = "frmPedidoCozinha";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Comanda";
+            Text = "Pedido Cozinha";
+            Click += frmPedidoCozinha_Click;
             ResumeLayout(false);
         }
 
         #endregion
 
+        private ReaLTaiizor.Controls.CyberButton cyberButton1;
         private ReaLTaiizor.Controls.CyberButton btnVoltar;
     }
 }

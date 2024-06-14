@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Comandas
 {
-    public partial class FrmCardapioCard : Form
+    public partial class frmUsuarios : Form
     {
-        public FrmCardapioCard()
+        public frmUsuarios()
         {
             InitializeComponent();
+        }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }
