@@ -54,5 +54,10 @@ namespace Comandas
             // encerra o aplicativo
             Application.Exit();
         }
+
+        private void FrmPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -212,6 +212,7 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Sistema de Comandos";
             TransparencyKey = Color.Fuchsia;
+            Load += FrmPrincipal_Load;
             gpxPrincipal.ResumeLayout(false);
             ResumeLayout(false);
         }
