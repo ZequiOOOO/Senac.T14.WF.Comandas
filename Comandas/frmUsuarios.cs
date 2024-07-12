@@ -12,6 +12,8 @@ namespace Comandas
 {
     public partial class frmUsuarios : Form
     {
+        private bool ehNovo;
+
         public frmUsuarios()
         {
             InitializeComponent();
@@ -29,10 +31,30 @@ namespace Comandas
 
         private void BtnSalvar_Click(object sender, EventArgs e)
         {
-            //metodo que inserir o usuario no banco
-            CriarUsuario();
 
-           // AtualizarUsuario();
+            if (ehNovo)
+                CriarUsuario();
+
+            else
+                AtualizarUsuario();
+        }
+
+        private void AtualizarUsuario()
+        {
+            using (var banco = new AppDbContext())
+            {
+                //consulta um usuario na tabela usando o Id da tela
+                var usuario = banco
+                  .Usuarios
+                    .Where(e => e.Id == int.Parse(txtId.TextButton))
+                    .FirstOrDefault();
+
+                usuario.Nome = txtNome.TextButton;
+                usuario.Email = txtNome.TextButton;
+                usuario.Senha = txtEmail.TextButton;
+                banco.SaveChanges();
+
+            }
         }
 
         private void CriarUsuario()
@@ -43,15 +65,16 @@ namespace Comandas
                 //criar um novo usuario
                 var novoUsuario = new Usuario();
                 //atributos as propriedades do usario
-                novoUsuario.Nome = "Ezequiel";
-                novoUsuario.Email = "ezequiel@hotmail.com";
-                novoUsuario.Senha = "12345";
-                 //salvar alteração(INSERT INTO usuarios)
+                novoUsuario.Nome = txtId.TextButton;
+                novoUsuario.Email = txtNome.TextButton;
+                novoUsuario.Senha = txtEmail.TextButton;
+                //salvar alteração(INSERT INTO usuarios)
                 banco.Usuarios.Add(novoUsuario);
                 banco.SaveChanges();
 
                 MessageBox.Show("Usuário cadastrado com sucesso.");
             }
         }
+
     }
 }

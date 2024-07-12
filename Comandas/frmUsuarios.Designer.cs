@@ -34,6 +34,16 @@
             BtnSalvar = new ReaLTaiizor.Controls.CyberButton();
             btnnovo = new ReaLTaiizor.Controls.CyberButton();
             btnCancelar = new ReaLTaiizor.Controls.CyberButton();
+            cyberGroupBox1 = new ReaLTaiizor.Controls.CyberGroupBox();
+            thunderLabel4 = new ReaLTaiizor.Controls.ThunderLabel();
+            thunderLabel3 = new ReaLTaiizor.Controls.ThunderLabel();
+            thunderLabel2 = new ReaLTaiizor.Controls.ThunderLabel();
+            thunderLabel1 = new ReaLTaiizor.Controls.ThunderLabel();
+            txtSenha = new ReaLTaiizor.Controls.CyberTextBox();
+            txtId = new ReaLTaiizor.Controls.CyberTextBox();
+            txtEmail = new ReaLTaiizor.Controls.CyberTextBox();
+            txtNome = new ReaLTaiizor.Controls.CyberTextBox();
+            cyberGroupBox1.SuspendLayout();
             SuspendLayout();
             // 
             // btnVoltar
@@ -103,7 +113,7 @@
             btnVoltarr.Lighting = false;
             btnVoltarr.LinearGradient_Background = false;
             btnVoltarr.LinearGradientPen = false;
-            btnVoltarr.Location = new Point(12, 358);
+            btnVoltarr.Location = new Point(39, 491);
             btnVoltarr.Name = "btnVoltarr";
             btnVoltarr.PenWidth = 15;
             btnVoltarr.Rounding = true;
@@ -143,7 +153,7 @@
             btnExcluir.Lighting = false;
             btnExcluir.LinearGradient_Background = false;
             btnExcluir.LinearGradientPen = false;
-            btnExcluir.Location = new Point(436, 165);
+            btnExcluir.Location = new Point(460, 306);
             btnExcluir.Name = "btnExcluir";
             btnExcluir.PenWidth = 15;
             btnExcluir.Rounding = true;
@@ -184,7 +194,7 @@
             BtnSalvar.Lighting = false;
             BtnSalvar.LinearGradient_Background = false;
             BtnSalvar.LinearGradientPen = false;
-            BtnSalvar.Location = new Point(254, 165);
+            BtnSalvar.Location = new Point(258, 306);
             BtnSalvar.Name = "BtnSalvar";
             BtnSalvar.PenWidth = 15;
             BtnSalvar.Rounding = true;
@@ -225,7 +235,7 @@
             btnnovo.Lighting = false;
             btnnovo.LinearGradient_Background = false;
             btnnovo.LinearGradientPen = false;
-            btnnovo.Location = new Point(67, 165);
+            btnnovo.Location = new Point(52, 306);
             btnnovo.Name = "btnnovo";
             btnnovo.PenWidth = 15;
             btnnovo.Rounding = true;
@@ -265,7 +275,7 @@
             btnCancelar.Lighting = false;
             btnCancelar.LinearGradient_Background = false;
             btnCancelar.LinearGradientPen = false;
-            btnCancelar.Location = new Point(625, 165);
+            btnCancelar.Location = new Point(668, 306);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.PenWidth = 15;
             btnCancelar.Rounding = true;
@@ -279,11 +289,213 @@
             btnCancelar.Timer_Effect_1 = 5;
             btnCancelar.Timer_RGB = 300;
             // 
+            // cyberGroupBox1
+            // 
+            cyberGroupBox1.Alpha = 20;
+            cyberGroupBox1.BackColor = Color.Transparent;
+            cyberGroupBox1.Background = true;
+            cyberGroupBox1.Background_WidthPen = 3F;
+            cyberGroupBox1.BackgroundPen = true;
+            cyberGroupBox1.ColorBackground = Color.FromArgb(37, 52, 68);
+            cyberGroupBox1.ColorBackground_1 = Color.FromArgb(37, 52, 68);
+            cyberGroupBox1.ColorBackground_2 = Color.FromArgb(41, 63, 86);
+            cyberGroupBox1.ColorBackground_Pen = Color.FromArgb(29, 200, 238);
+            cyberGroupBox1.ColorLighting = Color.FromArgb(29, 200, 238);
+            cyberGroupBox1.ColorPen_1 = Color.FromArgb(37, 52, 68);
+            cyberGroupBox1.ColorPen_2 = Color.FromArgb(41, 63, 86);
+            cyberGroupBox1.Controls.Add(thunderLabel4);
+            cyberGroupBox1.Controls.Add(thunderLabel3);
+            cyberGroupBox1.Controls.Add(thunderLabel2);
+            cyberGroupBox1.Controls.Add(thunderLabel1);
+            cyberGroupBox1.Controls.Add(txtSenha);
+            cyberGroupBox1.Controls.Add(txtId);
+            cyberGroupBox1.Controls.Add(txtEmail);
+            cyberGroupBox1.Controls.Add(txtNome);
+            cyberGroupBox1.CyberGroupBoxStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
+            cyberGroupBox1.ForeColor = Color.FromArgb(245, 245, 245);
+            cyberGroupBox1.Lighting = false;
+            cyberGroupBox1.LinearGradient_Background = false;
+            cyberGroupBox1.LinearGradientPen = false;
+            cyberGroupBox1.Location = new Point(39, 12);
+            cyberGroupBox1.Name = "cyberGroupBox1";
+            cyberGroupBox1.PenWidth = 15;
+            cyberGroupBox1.RGB = false;
+            cyberGroupBox1.Rounding = true;
+            cyberGroupBox1.RoundingInt = 60;
+            cyberGroupBox1.Size = new Size(882, 207);
+            cyberGroupBox1.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            cyberGroupBox1.TabIndex = 6;
+            cyberGroupBox1.Tag = "Cyber";
+            cyberGroupBox1.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            cyberGroupBox1.Timer_RGB = 300;
+            // 
+            // thunderLabel4
+            // 
+            thunderLabel4.BackColor = Color.Transparent;
+            thunderLabel4.ForeColor = Color.WhiteSmoke;
+            thunderLabel4.Location = new Point(53, 151);
+            thunderLabel4.Name = "thunderLabel4";
+            thunderLabel4.Size = new Size(136, 24);
+            thunderLabel4.TabIndex = 7;
+            thunderLabel4.Text = "Senha:";
+            // 
+            // thunderLabel3
+            // 
+            thunderLabel3.BackColor = Color.Transparent;
+            thunderLabel3.ForeColor = Color.WhiteSmoke;
+            thunderLabel3.Location = new Point(53, 109);
+            thunderLabel3.Name = "thunderLabel3";
+            thunderLabel3.Size = new Size(136, 24);
+            thunderLabel3.TabIndex = 6;
+            thunderLabel3.Text = "Email:";
+            // 
+            // thunderLabel2
+            // 
+            thunderLabel2.BackColor = Color.Transparent;
+            thunderLabel2.ForeColor = Color.WhiteSmoke;
+            thunderLabel2.Location = new Point(53, 67);
+            thunderLabel2.Name = "thunderLabel2";
+            thunderLabel2.Size = new Size(136, 24);
+            thunderLabel2.TabIndex = 5;
+            thunderLabel2.Text = "Nome:";
+            // 
+            // thunderLabel1
+            // 
+            thunderLabel1.BackColor = Color.Transparent;
+            thunderLabel1.ForeColor = Color.WhiteSmoke;
+            thunderLabel1.Location = new Point(53, 31);
+            thunderLabel1.Name = "thunderLabel1";
+            thunderLabel1.Size = new Size(187, 18);
+            thunderLabel1.TabIndex = 4;
+            thunderLabel1.Text = "Id:";
+            // 
+            // txtSenha
+            // 
+            txtSenha.Alpha = 20;
+            txtSenha.BackColor = Color.Transparent;
+            txtSenha.Background_WidthPen = 3F;
+            txtSenha.BackgroundPen = true;
+            txtSenha.ColorBackground = Color.FromArgb(37, 52, 68);
+            txtSenha.ColorBackground_Pen = Color.FromArgb(29, 200, 238);
+            txtSenha.ColorLighting = Color.FromArgb(29, 200, 238);
+            txtSenha.ColorPen_1 = Color.FromArgb(29, 200, 238);
+            txtSenha.ColorPen_2 = Color.FromArgb(37, 52, 68);
+            txtSenha.CyberTextBoxStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
+            txtSenha.Font = new Font("Arial", 9F);
+            txtSenha.ForeColor = Color.FromArgb(245, 245, 245);
+            txtSenha.Lighting = false;
+            txtSenha.LinearGradientPen = false;
+            txtSenha.Location = new Point(246, 139);
+            txtSenha.Name = "txtSenha";
+            txtSenha.PenWidth = 15;
+            txtSenha.RGB = false;
+            txtSenha.Rounding = true;
+            txtSenha.RoundingInt = 60;
+            txtSenha.Size = new Size(393, 36);
+            txtSenha.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            txtSenha.TabIndex = 3;
+            txtSenha.Tag = "Cyber";
+            txtSenha.TextButton = "";
+            txtSenha.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            txtSenha.Timer_RGB = 300;
+            // 
+            // txtId
+            // 
+            txtId.Alpha = 20;
+            txtId.BackColor = Color.Transparent;
+            txtId.Background_WidthPen = 3F;
+            txtId.BackgroundPen = true;
+            txtId.ColorBackground = Color.FromArgb(37, 52, 68);
+            txtId.ColorBackground_Pen = Color.FromArgb(29, 200, 238);
+            txtId.ColorLighting = Color.FromArgb(29, 200, 238);
+            txtId.ColorPen_1 = Color.FromArgb(29, 200, 238);
+            txtId.ColorPen_2 = Color.FromArgb(37, 52, 68);
+            txtId.CyberTextBoxStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
+            txtId.Enabled = false;
+            txtId.Font = new Font("Arial", 9F);
+            txtId.ForeColor = Color.FromArgb(245, 245, 245);
+            txtId.Lighting = false;
+            txtId.LinearGradientPen = false;
+            txtId.Location = new Point(246, 13);
+            txtId.Name = "txtId";
+            txtId.PenWidth = 15;
+            txtId.RGB = false;
+            txtId.Rounding = true;
+            txtId.RoundingInt = 60;
+            txtId.Size = new Size(393, 36);
+            txtId.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            txtId.TabIndex = 2;
+            txtId.Tag = "Cyber";
+            txtId.TextButton = "1";
+            txtId.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            txtId.Timer_RGB = 300;
+            // 
+            // txtEmail
+            // 
+            txtEmail.Alpha = 20;
+            txtEmail.BackColor = Color.Transparent;
+            txtEmail.Background_WidthPen = 3F;
+            txtEmail.BackgroundPen = true;
+            txtEmail.ColorBackground = Color.FromArgb(37, 52, 68);
+            txtEmail.ColorBackground_Pen = Color.FromArgb(29, 200, 238);
+            txtEmail.ColorLighting = Color.FromArgb(29, 200, 238);
+            txtEmail.ColorPen_1 = Color.FromArgb(29, 200, 238);
+            txtEmail.ColorPen_2 = Color.FromArgb(37, 52, 68);
+            txtEmail.CyberTextBoxStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
+            txtEmail.Font = new Font("Arial", 9F);
+            txtEmail.ForeColor = Color.FromArgb(245, 245, 245);
+            txtEmail.Lighting = false;
+            txtEmail.LinearGradientPen = false;
+            txtEmail.Location = new Point(246, 97);
+            txtEmail.Name = "txtEmail";
+            txtEmail.PenWidth = 15;
+            txtEmail.RGB = false;
+            txtEmail.Rounding = true;
+            txtEmail.RoundingInt = 60;
+            txtEmail.Size = new Size(393, 36);
+            txtEmail.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            txtEmail.TabIndex = 1;
+            txtEmail.Tag = "Cyber";
+            txtEmail.TextButton = "";
+            txtEmail.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            txtEmail.Timer_RGB = 300;
+            // 
+            // txtNome
+            // 
+            txtNome.Alpha = 20;
+            txtNome.BackColor = Color.Transparent;
+            txtNome.Background_WidthPen = 3F;
+            txtNome.BackgroundPen = true;
+            txtNome.ColorBackground = Color.FromArgb(37, 52, 68);
+            txtNome.ColorBackground_Pen = Color.FromArgb(29, 200, 238);
+            txtNome.ColorLighting = Color.FromArgb(29, 200, 238);
+            txtNome.ColorPen_1 = Color.FromArgb(29, 200, 238);
+            txtNome.ColorPen_2 = Color.FromArgb(37, 52, 68);
+            txtNome.CyberTextBoxStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
+            txtNome.Font = new Font("Arial", 9F);
+            txtNome.ForeColor = Color.FromArgb(245, 245, 245);
+            txtNome.Lighting = false;
+            txtNome.LinearGradientPen = false;
+            txtNome.Location = new Point(246, 55);
+            txtNome.Name = "txtNome";
+            txtNome.PenWidth = 15;
+            txtNome.RGB = false;
+            txtNome.Rounding = true;
+            txtNome.RoundingInt = 60;
+            txtNome.Size = new Size(393, 36);
+            txtNome.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            txtNome.TabIndex = 0;
+            txtNome.Tag = "Cyber";
+            txtNome.TextButton = "";
+            txtNome.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            txtNome.Timer_RGB = 300;
+            // 
             // frmUsuarios
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(933, 655);
+            Controls.Add(cyberGroupBox1);
             Controls.Add(btnCancelar);
             Controls.Add(btnnovo);
             Controls.Add(BtnSalvar);
@@ -294,6 +506,7 @@
             Name = "frmUsuarios";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Usuarios";
+            cyberGroupBox1.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -305,5 +518,14 @@
         private ReaLTaiizor.Controls.CyberButton btnExcluir;
         private ReaLTaiizor.Controls.CyberButton BtnSalvar;
         private ReaLTaiizor.Controls.CyberButton btnnovo;
+        private ReaLTaiizor.Controls.CyberGroupBox cyberGroupBox1;
+        private ReaLTaiizor.Controls.CyberTextBox txtNome;
+        private ReaLTaiizor.Controls.CyberTextBox txtId;
+        private ReaLTaiizor.Controls.CyberTextBox txtEmail;
+        private ReaLTaiizor.Controls.ThunderLabel thunderLabel4;
+        private ReaLTaiizor.Controls.ThunderLabel thunderLabel3;
+        private ReaLTaiizor.Controls.ThunderLabel thunderLabel2;
+        private ReaLTaiizor.Controls.ThunderLabel thunderLabel1;
+        private ReaLTaiizor.Controls.CyberTextBox txtSenha;
     }
 }
