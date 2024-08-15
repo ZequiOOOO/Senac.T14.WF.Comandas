@@ -75,12 +75,12 @@
             btnVoltar.Lighting = false;
             btnVoltar.LinearGradient_Background = false;
             btnVoltar.LinearGradientPen = false;
-            btnVoltar.Location = new Point(41, 567);
+            btnVoltar.Location = new Point(22, 651);
             btnVoltar.Name = "btnVoltar";
             btnVoltar.PenWidth = 15;
             btnVoltar.Rounding = true;
             btnVoltar.RoundingInt = 70;
-            btnVoltar.Size = new Size(195, 75);
+            btnVoltar.Size = new Size(195, 43);
             btnVoltar.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             btnVoltar.TabIndex = 0;
             btnVoltar.Tag = "Cyber";
@@ -116,7 +116,7 @@
             btnVoltarr.Lighting = false;
             btnVoltarr.LinearGradient_Background = false;
             btnVoltarr.LinearGradientPen = false;
-            btnVoltarr.Location = new Point(742, 536);
+            btnVoltarr.Location = new Point(742, 631);
             btnVoltarr.Name = "btnVoltarr";
             btnVoltarr.PenWidth = 15;
             btnVoltarr.Rounding = true;
@@ -151,6 +151,7 @@
             btnExcluir.Effect_2 = true;
             btnExcluir.Effect_2_ColorBackground = Color.White;
             btnExcluir.Effect_2_Transparency = 20;
+            btnExcluir.Enabled = false;
             btnExcluir.Font = new Font("Arial", 11F);
             btnExcluir.ForeColor = Color.FromArgb(245, 245, 245);
             btnExcluir.Lighting = false;
@@ -192,6 +193,7 @@
             BtnSalvar.Effect_2 = true;
             BtnSalvar.Effect_2_ColorBackground = Color.White;
             BtnSalvar.Effect_2_Transparency = 20;
+            BtnSalvar.Enabled = false;
             BtnSalvar.Font = new Font("Arial", 11F);
             BtnSalvar.ForeColor = Color.FromArgb(245, 245, 245);
             BtnSalvar.Lighting = false;
@@ -274,6 +276,7 @@
             btnCancelar.Effect_2 = true;
             btnCancelar.Effect_2_ColorBackground = Color.White;
             btnCancelar.Effect_2_Transparency = 20;
+            btnCancelar.Enabled = false;
             btnCancelar.Font = new Font("Arial", 11F);
             btnCancelar.ForeColor = Color.FromArgb(245, 245, 245);
             btnCancelar.Lighting = false;
@@ -503,8 +506,9 @@
             dgvUsuarios.Location = new Point(63, 387);
             dgvUsuarios.Name = "dgvUsuarios";
             dgvUsuarios.RowHeadersWidth = 62;
-            dgvUsuarios.Size = new Size(804, 134);
+            dgvUsuarios.Size = new Size(804, 228);
             dgvUsuarios.TabIndex = 7;
+            dgvUsuarios.CellClick += dgvUsuarios_CellClick;
             // 
             // btnEditar
             // 
@@ -527,6 +531,7 @@
             btnEditar.Effect_2 = true;
             btnEditar.Effect_2_ColorBackground = Color.White;
             btnEditar.Effect_2_Transparency = 20;
+            btnEditar.Enabled = false;
             btnEditar.Font = new Font("Arial", 11F);
             btnEditar.ForeColor = Color.FromArgb(245, 245, 245);
             btnEditar.Lighting = false;

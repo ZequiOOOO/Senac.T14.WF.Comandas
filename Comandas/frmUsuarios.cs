@@ -42,12 +42,19 @@ namespace Comandas
 
         private void cyberButton3_Click(object sender, EventArgs e)
         {
+            int idUsuario = int.Parse(txtId.TextButton);
+            ExcluirUsuario(idUsuario);
 
+        }
+
+        private void ExcluirUsuario(int idUsuario)
+        {
+            throw new NotImplementedException();
         }
 
         private void BtnSalvar_Click(object sender, EventArgs e)
         {
-           
+
             if (ehNovo)
                 CriarUsuario();
 
@@ -55,10 +62,13 @@ namespace Comandas
                 AtualizarUsuario();
 
             DesabilitarCampos();
-
             ListarUsuarios();
-
             LimparCampos();
+            btnnovo.Enabled = true;
+            btnEditar.Enabled = false;
+            BtnSalvar.Enabled = false;
+            btnExcluir.Enabled = false;
+            btnCancelar.Enabled = false;
 
 
         }
@@ -132,6 +142,33 @@ namespace Comandas
         {
             //indica que esta editando usuario
             ehNovo = false;
+            txtNome.Enabled = true;
+            txtEmail.Enabled =true;
+            txtSenha.Enabled = true;
+        }
+
+        private void dgvUsuarios_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                var linha = dgvUsuarios.Rows[e.RowIndex];
+
+                var id = linha.Cells["Id"].Value;
+                var nome = linha.Cells["Nome"].Value;
+                var email = linha.Cells["Email"].Value;
+                var senha = linha.Cells["Senha"].Value;
+
+                txtId.TextButton = id.ToString();
+                txtNome.TextButton = nome.ToString();
+                txtEmail.TextButton = email.ToString();
+                txtSenha.TextButton = senha.ToString();
+
+                btnEditar.Enabled = true;
+                btnnovo.Enabled = false;
+                BtnSalvar.Enabled = false;
+                btnCancelar.Enabled = false;
+                btnExcluir.Enabled = true;
+            }// end if(e.rowindex >=0)
         }
     }
 }
