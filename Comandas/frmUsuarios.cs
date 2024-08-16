@@ -42,14 +42,38 @@ namespace Comandas
 
         private void cyberButton3_Click(object sender, EventArgs e)
         {
-            int idUsuario = int.Parse(txtId.TextButton);
+            //obtem o id do usuário
+            int idUsuario = Convert.ToInt32(txtId.TextButton);
+            //chama o método que excluí  da tabela  usuário
             ExcluirUsuario(idUsuario);
-
+            ListarUsuarios();
+            LimparCampos();
+            btnnovo.Enabled = true;
+            btnEditar.Enabled = false;   
+            BtnSalvar.Enabled = false;
+            btnExcluir.Enabled = false;
+            btnCancelar.Enabled = false;
+            MessageBox.Show("Usuário excluído com sucesso");
         }
 
         private void ExcluirUsuario(int idUsuario)
         {
-            throw new NotImplementedException();
+           //conectar no bancos de dados 
+           //SELECT * FROM usuarios WHERE id = ?
+           using (var banco = new AppDbContext())
+            {
+                //consultar o usuario
+                var usuario = banco.Usuarios.First(u => u.Id.Equals(idUsuario));
+                //avisar o banco que estou excluindo
+                //DELETE FROM usuarios WHEREid = ?
+                banco.Usuarios.Remove(usuario);
+
+                //confirmar a exclusão
+                //COMMIT
+                banco.SaveChanges();
+
+            }
+
         }
 
         private void BtnSalvar_Click(object sender, EventArgs e)
@@ -142,9 +166,17 @@ namespace Comandas
         {
             //indica que esta editando usuario
             ehNovo = false;
-            txtNome.Enabled = true;
-            txtEmail.Enabled =true;
+            HabilitarCampos();
+            ehNovo = false;
+            txtNome.Enabled = false;
+            txtEmail.Enabled = true;
             txtSenha.Enabled = true;
+
+            btnnovo.Enabled = false;
+            btnEditar.Enabled = false;
+            BtnSalvar.Enabled = true;
+            btnExcluir.Enabled = false;
+            btnCancelar.Enabled = true;
         }
 
         private void dgvUsuarios_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -169,6 +201,16 @@ namespace Comandas
                 btnCancelar.Enabled = false;
                 btnExcluir.Enabled = true;
             }// end if(e.rowindex >=0)
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            LimparCampos();
+            btnnovo.Enabled = true;
+            btnEditar.Enabled= false;
+            BtnSalvar.Enabled= false;
+            btnExcluir.Enabled= false;
+            btnCancelar.Enabled= false;
         }
     }
 }

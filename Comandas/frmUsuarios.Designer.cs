@@ -295,6 +295,7 @@
             btnCancelar.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             btnCancelar.Timer_Effect_1 = 5;
             btnCancelar.Timer_RGB = 300;
+            btnCancelar.Click += btnCancelar_Click;
             // 
             // cyberGroupBox1
             // 
