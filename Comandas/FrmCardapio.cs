@@ -19,7 +19,22 @@ namespace Comandas
 
         private void btnvoltar_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Close();
+        }
+
+        private void btnNovo_Click(object sender, EventArgs e)
+        {
+            new FrmCardapioCad().ShowDialog();
+        }
+
+        private void btnExcluir_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            new FrmCardapioCad().ShowDialog();
         }
     }
 }

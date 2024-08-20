@@ -34,6 +34,7 @@
             btnComanda = new ReaLTaiizor.Controls.MetroButton();
             btnCardapio = new ReaLTaiizor.Controls.MetroButton();
             btnSair = new ReaLTaiizor.Controls.CyberButton();
+            dateTimePicker1 = new DateTimePicker();
             gpxPrincipal.SuspendLayout();
             SuspendLayout();
             // 
@@ -44,10 +45,10 @@
             gpxPrincipal.Controls.Add(btnPedidoCozinha);
             gpxPrincipal.Controls.Add(btnComanda);
             gpxPrincipal.Controls.Add(btnCardapio);
-            gpxPrincipal.Location = new Point(52, 110);
+            gpxPrincipal.Location = new Point(52, 72);
             gpxPrincipal.MinimumSize = new Size(126, 50);
             gpxPrincipal.Name = "gpxPrincipal";
-            gpxPrincipal.Size = new Size(834, 376);
+            gpxPrincipal.Size = new Size(837, 414);
             gpxPrincipal.TabIndex = 0;
             gpxPrincipal.TabStop = false;
             // 
@@ -64,7 +65,7 @@
             btnUsuarios.Location = new Point(607, 152);
             btnUsuarios.Name = "btnUsuarios";
             btnUsuarios.NormalBorderColor = Color.FromArgb(65, 177, 225);
-            btnUsuarios.NormalColor = Color.FromArgb(65, 177, 225);
+            btnUsuarios.NormalColor = Color.Navy;
             btnUsuarios.NormalTextColor = Color.White;
             btnUsuarios.PressBorderColor = Color.FromArgb(35, 147, 195);
             btnUsuarios.PressColor = Color.FromArgb(35, 147, 195);
@@ -91,7 +92,7 @@
             btnPedidoCozinha.Location = new Point(408, 152);
             btnPedidoCozinha.Name = "btnPedidoCozinha";
             btnPedidoCozinha.NormalBorderColor = Color.FromArgb(65, 177, 225);
-            btnPedidoCozinha.NormalColor = Color.FromArgb(65, 177, 225);
+            btnPedidoCozinha.NormalColor = Color.Navy;
             btnPedidoCozinha.NormalTextColor = Color.White;
             btnPedidoCozinha.PressBorderColor = Color.FromArgb(35, 147, 195);
             btnPedidoCozinha.PressColor = Color.FromArgb(35, 147, 195);
@@ -118,7 +119,7 @@
             btnComanda.Location = new Point(205, 152);
             btnComanda.Name = "btnComanda";
             btnComanda.NormalBorderColor = Color.FromArgb(65, 177, 225);
-            btnComanda.NormalColor = Color.FromArgb(65, 177, 225);
+            btnComanda.NormalColor = Color.Navy;
             btnComanda.NormalTextColor = Color.White;
             btnComanda.PressBorderColor = Color.FromArgb(35, 147, 195);
             btnComanda.PressColor = Color.FromArgb(35, 147, 195);
@@ -134,18 +135,19 @@
             // 
             // btnCardapio
             // 
-            btnCardapio.DisabledBackColor = Color.FromArgb(120, 65, 177, 225);
+            btnCardapio.DisabledBackColor = Color.Blue;
             btnCardapio.DisabledBorderColor = Color.FromArgb(120, 65, 177, 225);
-            btnCardapio.DisabledForeColor = Color.Gray;
+            btnCardapio.DisabledForeColor = Color.DeepSkyBlue;
             btnCardapio.Font = new Font("Microsoft Sans Serif", 10F);
+            btnCardapio.ForeColor = SystemColors.Highlight;
             btnCardapio.HoverBorderColor = Color.FromArgb(95, 207, 255);
             btnCardapio.HoverColor = Color.FromArgb(95, 207, 255);
             btnCardapio.HoverTextColor = Color.White;
             btnCardapio.IsDerivedStyle = true;
             btnCardapio.Location = new Point(6, 152);
             btnCardapio.Name = "btnCardapio";
-            btnCardapio.NormalBorderColor = Color.FromArgb(65, 177, 225);
-            btnCardapio.NormalColor = Color.FromArgb(65, 177, 225);
+            btnCardapio.NormalBorderColor = Color.Navy;
+            btnCardapio.NormalColor = Color.Navy;
             btnCardapio.NormalTextColor = Color.White;
             btnCardapio.PressBorderColor = Color.FromArgb(35, 147, 195);
             btnCardapio.PressColor = Color.FromArgb(35, 147, 195);
@@ -185,7 +187,7 @@
             btnSair.Lighting = false;
             btnSair.LinearGradient_Background = false;
             btnSair.LinearGradientPen = false;
-            btnSair.Location = new Point(12, 586);
+            btnSair.Location = new Point(52, 563);
             btnSair.Name = "btnSair";
             btnSair.PenWidth = 15;
             btnSair.Rounding = true;
@@ -200,11 +202,20 @@
             btnSair.Timer_RGB = 300;
             btnSair.Click += btnSair_Click;
             // 
+            // dateTimePicker1
+            // 
+            dateTimePicker1.Location = new Point(530, 12);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(359, 31);
+            dateTimePicker1.TabIndex = 2;
+            // 
             // FrmPrincipal
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Linen;
             ClientSize = new Size(939, 673);
+            Controls.Add(dateTimePicker1);
             Controls.Add(btnSair);
             Controls.Add(gpxPrincipal);
             FormBorderStyle = FormBorderStyle.None;
@@ -225,5 +236,6 @@
         private ReaLTaiizor.Controls.MetroButton btnComanda;
         private ReaLTaiizor.Controls.MetroButton btnCardapio;
         private ReaLTaiizor.Controls.CyberButton btnSair;
+        private DateTimePicker dateTimePicker1;
     }
 }
