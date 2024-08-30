@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             cyberGroupBox1 = new ReaLTaiizor.Controls.CyberGroupBox();
+            thunderLabel4 = new ReaLTaiizor.Controls.ThunderLabel();
+            thunderLabel2 = new ReaLTaiizor.Controls.ThunderLabel();
             btnDescrição = new ReaLTaiizor.Controls.ThunderLabel();
             chkPreparo = new ReaLTaiizor.Controls.CyberCheckBox();
             txtPreço = new ReaLTaiizor.Controls.CyberTextBox();
@@ -36,8 +38,6 @@
             txtTitulo = new ReaLTaiizor.Controls.CyberTextBox();
             btnCancelar = new ReaLTaiizor.Controls.CyberButton();
             btnSalvar = new ReaLTaiizor.Controls.CyberButton();
-            thunderLabel2 = new ReaLTaiizor.Controls.ThunderLabel();
-            thunderLabel4 = new ReaLTaiizor.Controls.ThunderLabel();
             cyberGroupBox1.SuspendLayout();
             SuspendLayout();
             // 
@@ -79,6 +79,27 @@
             cyberGroupBox1.Tag = "Cyber";
             cyberGroupBox1.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             cyberGroupBox1.Timer_RGB = 300;
+            // 
+            // thunderLabel4
+            // 
+            thunderLabel4.BackColor = Color.Transparent;
+            thunderLabel4.ForeColor = Color.WhiteSmoke;
+            thunderLabel4.Location = new Point(81, 260);
+            thunderLabel4.Name = "thunderLabel4";
+            thunderLabel4.Size = new Size(136, 27);
+            thunderLabel4.TabIndex = 10;
+            thunderLabel4.Text = "Preço";
+            thunderLabel4.Click += thunderLabel4_Click;
+            // 
+            // thunderLabel2
+            // 
+            thunderLabel2.BackColor = Color.Transparent;
+            thunderLabel2.ForeColor = Color.WhiteSmoke;
+            thunderLabel2.Location = new Point(67, 35);
+            thunderLabel2.Name = "thunderLabel2";
+            thunderLabel2.Size = new Size(136, 27);
+            thunderLabel2.TabIndex = 9;
+            thunderLabel2.Text = "Titulo";
             // 
             // btnDescrição
             // 
@@ -298,26 +319,7 @@
             btnSalvar.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             btnSalvar.Timer_Effect_1 = 5;
             btnSalvar.Timer_RGB = 300;
-            // 
-            // thunderLabel2
-            // 
-            thunderLabel2.BackColor = Color.Transparent;
-            thunderLabel2.ForeColor = Color.WhiteSmoke;
-            thunderLabel2.Location = new Point(67, 35);
-            thunderLabel2.Name = "thunderLabel2";
-            thunderLabel2.Size = new Size(136, 27);
-            thunderLabel2.TabIndex = 9;
-            thunderLabel2.Text = "Descrição";
-            // 
-            // thunderLabel4
-            // 
-            thunderLabel4.BackColor = Color.Transparent;
-            thunderLabel4.ForeColor = Color.WhiteSmoke;
-            thunderLabel4.Location = new Point(81, 260);
-            thunderLabel4.Name = "thunderLabel4";
-            thunderLabel4.Size = new Size(136, 27);
-            thunderLabel4.TabIndex = 10;
-            thunderLabel4.Text = "Descrição";
+            btnSalvar.Click += btnSalvar_Click;
             // 
             // FrmCardapioCad
             // 

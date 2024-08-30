@@ -9,6 +9,7 @@ namespace Comandas
     {
         //propriedade que representa a tabela UsuáSrios
         public DbSet<Usuario> Usuarios { get; set; }
+        public DbSet<Cardapio> Cardapio { get; set; }
         //métodos que configura informando para o EF que o banco será SQlite
         protected override void OnConfiguring(DbContextOptionsBuilder
        optionsBuilder)
