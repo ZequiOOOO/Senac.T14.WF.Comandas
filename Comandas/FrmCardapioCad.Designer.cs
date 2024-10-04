@@ -357,7 +357,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(919, 609);
+            ClientSize = new Size(995, 609);
             Controls.Add(btnSalvar);
             Controls.Add(btnCancelar);
             Controls.Add(cyberGroupBox1);

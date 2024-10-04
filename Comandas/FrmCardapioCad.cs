@@ -13,6 +13,7 @@ namespace Comandas
     public partial class FrmCardapioCad : Form
     {  //variavel que indica se esta criando um novo cardapio
         bool ehNovo = false;
+        private frmCardapio _frmCardapio;
 
         public int ID { get; }
         public string? TITULO { get; }
@@ -20,13 +21,14 @@ namespace Comandas
         public decimal PRECO { get; }
         public bool POSSUIPREPARO { get; }
 
-        public FrmCardapioCad(bool acao)
+        public FrmCardapioCad(bool acao, frmCardapio frmCardapio)
         {
             ehNovo = acao;
+            _frmCardapio = frmCardapio;
             InitializeComponent();
         }
 
-        public FrmCardapioCad(bool acao, int iD, string? tITULO, string? dESCRICAO, decimal pRECO, bool pOSSUIPREPARO) : this(acao)
+        public FrmCardapioCad(bool acao, int iD, string? tITULO, string? dESCRICAO, decimal pRECO, bool pOSSUIPREPARO, frmCardapio frmCardapio) : this(acao, frmCardapio)
         {
             ehNovo = acao;
             InitializeComponent();
@@ -70,6 +72,8 @@ namespace Comandas
                 //Executa o método que realiza
                 AtualizarCardapio();
             }
+            _frmCardapio.ListarCardapios();
+            // fecha a tela atual (
             Close();
         }
 
